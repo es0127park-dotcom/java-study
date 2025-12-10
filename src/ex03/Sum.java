@@ -8,7 +8,7 @@ public class Sum {
             sum += i;
         }
 
-        System.out.println("1부터 10까지의 정수의 합 ="+sum);
+        System.out.println("1부터 10까지의 정수의 합 = "+sum);
 
     }
 }

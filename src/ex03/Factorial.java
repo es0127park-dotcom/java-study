@@ -11,7 +11,7 @@ public class Factorial {
         Scanner scan = new Scanner(System.in);
         n = scan.nextInt();
 
-        for (int i = 1; i < n; i++)
+        for (int i = 1; i <= n; i++)
             fact = fact * i;
 
         System.out.printf("%d!은 %d입니다.\n", n, fact);

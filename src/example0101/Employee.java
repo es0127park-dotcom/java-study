@@ -1,6 +1,7 @@
 package example0101;
 
 public class Employee {
+    // 1-1. 필드 정의
     private String name;
     private String phone;
     private String dept;
@@ -9,6 +10,7 @@ public class Employee {
     private String account;
     private String position;
 
+    // 1-2. 생성자 오버로딩
     Employee(String name, String phone){
         this.name = name;
         this.phone = phone;
@@ -39,6 +41,19 @@ public class Employee {
         this.position = position;
     }
 
+    // 1-3. 메서드 정의
+    // (1) 사원 정보 출력 메서드
+    void printInfo(){
+        System.out.println(name + " / " + phone  + " / " + dept + " / 사원번호 : " + empNo + " / 직급 : " + position + " / 월급 : " + salary + " / 계좌 : " + account);
+    }
+
+    // (3) 연봉 계산 메서드 (기본) -> 어떻게 만드는지 모르겠음. 공부 필요.
+
+
+    // (4) 연봉+직급별 보너스를 포함한 연봉 (심화) -> 어떻게 만드는지 모르겠음. 공부 필요.
+
+
+    // (2) 사원 정보 수정용 메서드 (Setter/Getter)
     public String getName() {
         return name;
     }
